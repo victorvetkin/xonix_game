@@ -198,7 +198,7 @@ findPath(int MatchingBlockStatus, int newPathBlockStatus, int startPosX, int sta
 	}
 }
 
-static void
+static void // Recursive flood fill algorithm in four directions (https://en.wikipedia.org/wiki/Flood_fill)
 fillAreaFromPos(int status, int newstatus,int posX, int posY) {
 
 	if (Blocks[posX][posY] != status) {
